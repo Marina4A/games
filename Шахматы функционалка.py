@@ -451,14 +451,14 @@ def main():
                     matrix[start[0]][start[1]] = '.'
                     break
                 flag = False
-        # while True:
-        #     answer = input('Вывести нотацию партии?(да/нет) ').lower()  # запрос печати записанной нотации
-        #     if answer == 'да':
-        #         notation_chess(step, current_color, counter, 1, shah(finish_position, current_color))
-        #         break
-        #     elif answer == 'нет':
-        #         notation_chess(step, current_color, counter, 0, shah(finish_position, current_color))
-        #         break
+        while True:
+            answer = input('Вывести нотацию партии?(да/нет) ').lower()  # запрос печати записанной нотации
+            if answer == 'да':
+                notation_chess(step, current_color, counter, 1, shah(finish_position, current_color))
+                break
+            elif answer == 'нет':
+                notation_chess(step, current_color, counter, 0, shah(finish_position, current_color))
+                break
         current_color = not current_color
         counter += 1
 
